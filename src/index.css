@@ -1,13 +1,34 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+header {
+  background-color: aquamarine;
+}
+main {
+  background-color: blanchedalmond;
+}
+footer {
+  background-color: yellowgreen;
+}
+main li {
+  margin-bottom: 8px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+main li FaTrashAlt {
+  margin-left: 9px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Initially position the collapse content off-screen to the left */
+.collapse-left {
+  position: fixed;
+  top: 0;
+  left: -300px; /* Start off-screen */
+  width: 300px;
+  height: 100vh;
+  overflow-y: auto;
+  transition: left 0.3s ease-in-out;
+  z-index: 1040; /* Keep above other content */
+}
+
+/* When the collapse is shown, move it to the left */
+.collapse.show.collapse-left {
+  left: 0;
 }
