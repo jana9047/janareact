@@ -1,13 +1,13 @@
-import Header from "./Header";
-import Content from "./Content";
-import Footer from "./Footer";
-
+// import PropsExample from "./Components/PropsExample";
+import SetcountExample from './Components/SetcountExample';
+import 'bootstrap/dist/css/bootstrap.css'
 function App() {
   return (
     <div>     
-      <Header/>
-      <Content/>  
-      <Footer/>
+      {/* <PropsExample name="jana" age={21}></PropsExample>
+      <PropsExample name="kamal" age={18}></PropsExample> */}
+
+      <SetcountExample></SetcountExample>
     </div>
     
   );
