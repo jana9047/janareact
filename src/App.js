@@ -4,12 +4,14 @@
 // import UseRefExample from './Components/UseRefExample';
 // import UseMemoExample from './Components/UseMemoExample';
 // import UseCallbackExample from './Components/UseCallbackExample';
-import { createContext, useState } from 'react';
-import UseContextExample from './Components/UseContextExample';
+// import { createContext, useState } from 'react';
+// import UseContextExample from './Components/UseContextExample';
+//export const MyContext=createContext();
+import UseReducerExample from './Components/UseReducerExample';
 import 'bootstrap/dist/css/bootstrap.css'
-export const MyContext=createContext();
+
 function App() {
-  const[message,setmessage]=useState('hi bro');
+  // const[message,setmessage]=useState('hi bro');
   return (
     <div>     
       {/* <PropsExample name="jana" age={21}></PropsExample>
@@ -20,10 +22,10 @@ function App() {
        {/* <UseRefExample></UseRefExample> */}
        {/* <UseMemoExample></UseMemoExample> */}
        {/* <UseCallbackExample></UseCallbackExample> */}
-       <MyContext.Provider value={{message,setmessage}}>
+       {/* <MyContext.Provider value={{message,setmessage}}>
         <UseContextExample></UseContextExample>
-       </MyContext.Provider>
-       
+       </MyContext.Provider> */}
+       <UseReducerExample></UseReducerExample>
     </div>
     
   );
